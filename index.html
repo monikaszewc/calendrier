@@ -53,10 +53,30 @@ dialog::backdrop{background:rgba(0,0,0,.55)}
 // ===== DO EDYCJI: rok kalendarza i linki do 24 formularzy (kolejność = dni 1–24) =====
 const YEAR = 2026;
 const LINKS = [
- "", "", "", "", "", "",
- "", "", "", "", "", "",
- "", "", "", "", "", "",
- "", "", "", "", "", ""
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURUREUlNNNEQxOU80V0xNVDYzOFpPUFZSRS4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURFlZRDg2REc1M00zUDFHTEFEUTdGNzBERC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQkVGU0FKRVJQRkdQNVlDWlhMMzBVMjVNOC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUM1gxSUU4WUVLRUFFNERLQ0pRT0wwSzJTMy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURUdYSkdEN0M1T1BDMDdDV0dJM0I5MVhMRy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUNE9COTc4SlY3RDFCRkhUWDlXNUJZRTBLUy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURFo5SEhLUVI3U1FZSjBQNVNMM0QyTExRNC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURTA4SlkzUUhaMldCQjA1TUlSTlVBWUJTMy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURVlEU0ExUE1YUUhNT1FUUjFTTDNLVjVGVC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMU5PWlBSMDRYTzA0T1NWV1ozV04yMTZZWC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQ0pZRk82SjNWMDNMRVVWRDZDRjk1Q0o1NS4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQkEwVlQ5UUxFUUtBVkVKMVBaV04yTEJVOC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMVZXTTQwN0dSUU01VEpIQkNOQVkyMzBGUy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUNEtINVFBRlZYQ0dESUFURlk2UzU5OUQ4VC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMTZMVUUyT1ZDR0ZCMjcxWE4zOTRSRUREWi4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUNTdZUDhFWjNaUkNUVkpRVVNCUDBWVFRRWC4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUM04xRk1YRzNaOENBS0JLQjY4TzRBNlZYRS4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQ0xWTUtGVjBMQUhLSjk2Q0tERDBLUEgxQi4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQTk5M0ZTRDc5RUw4Q0VTN0hQR1JTUE1JQS4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMjlDUFdYOUdRNjNVMTNLV1NPVjRUQzJLTS4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMk9FRjVSWFJUWFpSUUVIV1FMUDlSTlhESy4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUMFc4TEkxS0owWTVYTlAyWTlFTFRROFM5Mi4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRUQ1kxU1RFVENWSU42T0VGT0sxTjVGR01YSi4u",
+ "https://forms.office.com/Pages/ResponsePage.aspx?id=wnq1f2cSi029g4qJgRbJDOU0Gksa9xNHsSKXfyEpCCRURFpBVEU4NDVKVU5ESlcxSURUWEhDVkVQQy4u"
 ];
 // ===== koniec sekcji do edycji =====
 
